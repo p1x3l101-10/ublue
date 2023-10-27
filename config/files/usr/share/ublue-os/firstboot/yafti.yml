@@ -85,6 +85,7 @@ screens:
             - Google Chrome: com.google.Chrome
             - Microsoft Edge: com.microsoft.Edge
             - Opera: com.opera.Opera
+            - LibreWolf: io.gitlab.librewolf-community
         Gaming:
           description: "Rock and Stone!"
           default: false
