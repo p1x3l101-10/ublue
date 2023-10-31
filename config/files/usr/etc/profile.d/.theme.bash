@@ -2,7 +2,7 @@
 USERNAME="\u"
 CURRENT_PATH="\[\w\]"
 # Ensure colors are set
-source /etc/profile.d/theme-colors.sh
+source /etc/profile.d/theme-color.sh
 # Conditional prompt values
 if [[ $UID -eq 0 ]];then
 	COL_PROMPT="${COL_RED}"
