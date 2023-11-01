@@ -65,15 +65,23 @@ screens:
             - Text Editor: org.gnome.TextEditor
             - Videos (Player): org.gnome.Totem
             - Weather: org.gnome.Weather
+        Alternate GNOME Core Apps:
+          description: Alternate versions (better) of the core apps
+          default: true
+          packages:
+            - Celluloid: io.github.celluloid_player.Celluloid
+            - Weather: io.github.amit9838.weather
         System Apps:
           description: System applications for all desktop environments.
           default: true
           packages:
+            - Dconf Editor: ca.desrt.dconf-editor
             - Deja Dup Backups: org.gnome.DejaDup
             - Fedora Media Writer: org.fedoraproject.MediaWriter
             - Flatseal (Permission Manager): com.github.tchx84.Flatseal
             - Font Downloader: org.gustavoperedo.FontDownloader
             - Mozilla Firefox: org.mozilla.firefox
+            - Warehouse (Data manager): io.github.flattool.Warehouse
         Web Browsers:
           description: Additional browsers to complement or replace Firefox.
           default: false
@@ -81,20 +89,23 @@ screens:
             - Brave: com.brave.Browser
             - GNOME Web: org.gnome.Epiphany
             - Google Chrome: com.google.Chrome
+            - LibreWolf: io.gitlab.librewolf-community
             - Microsoft Edge: com.microsoft.Edge
             - Opera: com.opera.Opera
-            - LibreWolf: io.gitlab.librewolf-community
         Gaming:
           description: "Rock and Stone!"
           default: false
           packages:
+            - Armcord (Discord): xyz.armcord.ArmCord
             - Bottles: com.usebottles.bottles
-            - Discord: com.discordapp.Discord
             - Heroic Games Launcher: com.heroicgameslauncher.hgl
+            - SDGBoop: com.steamgriddb.SGDBoop
             - Steam: com.valvesoftware.Steam
+            - SteamTinkerLaunch (Utility): com.valvesoftware.Steam.Utility.steamtinkerlaunch
+            - Steam Adwaita Themer: io.github.Foldex.AdwSteamGtk
             - Gamescope (Utility): org.freedesktop.Platform.VulkanLayer.gamescope
             - MangoHUD (Utility): org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
-            - SteamTinkerLaunch (Utility): com.valvesoftware.Steam.Utility.steamtinkerlaunch
+            - MCPE Launcher: io.mrarm.mcpelauncher
             - Proton Updater for Steam: net.davidotek.pupgui2
         Office:
           description: Boost your productivity.
@@ -106,6 +117,7 @@ screens:
             - Slack: com.slack.Slack
             - Standard Notes: org.standardnotes.standardnotes
             - Thunderbird Email: org.mozilla.Thunderbird
+            - Helvum (Advanced controls for pipewire): org.pipewire.Helvum
         Streaming:
           description: Stream to the Internet.
           default: false
