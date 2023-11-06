@@ -81,6 +81,7 @@ screens:
             - Flatseal (Permission Manager): com.github.tchx84.Flatseal
             - Font Downloader: org.gustavoperedo.FontDownloader
             - Mozilla Firefox: org.mozilla.firefox
+            - Resources: net.nokyan.Resources
             - Warehouse (Data manager): io.github.flattool.Warehouse
         Web Browsers:
           description: Additional browsers to complement or replace Firefox.
