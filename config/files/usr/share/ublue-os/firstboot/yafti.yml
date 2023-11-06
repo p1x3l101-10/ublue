@@ -75,6 +75,7 @@ screens:
           description: System applications for all desktop environments.
           default: true
           packages:
+            - Impression (Image Burner): io.gitlab.adhami3310.Impression
             - Dconf Editor: ca.desrt.dconf-editor
             - Deja Dup Backups: org.gnome.DejaDup
             - Fedora Media Writer: org.fedoraproject.MediaWriter
