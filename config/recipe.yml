@@ -28,8 +28,6 @@ modules:
       - neovim # Better text editor dispite toolbox existing
       - steam-devices # Make steam controllers work
       - syncthing # Keep devices in sync
-      - tor # TODO: REMOVE
-      - torsocks # TODO: REMOVE
       - gnome-tweaks # Extra settings
       - tldr # Better man pages
     remove:
