@@ -34,6 +34,11 @@ modules:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
       - gnome-system-monitor # We have a flapak for that
+      # Remove built in extensions, except for background logo
+      - gnome-shell-extension-apps-menu
+      - gnome-shell-extension-launch-new-instance
+      - gnome-shell-extension-places-menu
+      - gnome-shell-extension-window-list
 
   - type: bling # configure what to pull in from ublue-os/bling
     install:
