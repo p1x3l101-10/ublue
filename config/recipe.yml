@@ -57,5 +57,8 @@ modules:
 
   - type: script
     scripts:
-      - signing.sh # this sets up the proper policy & signing files for signed images to work
       - hide-desktop-files.sh # Hide specified desktop files
+
+  - type: script
+    scripts:
+      - signing.sh # this sets up the proper policy & signing files for signed images to work
