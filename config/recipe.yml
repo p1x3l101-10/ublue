@@ -39,6 +39,7 @@ modules:
       - gnome-shell-extension-launch-new-instance
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
+      - gnome-classic-session # Fix dependency issues
 
   - type: bling # configure what to pull in from ublue-os/bling
     install:
