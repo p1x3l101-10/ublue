@@ -6,5 +6,12 @@
 set -oue pipefail
 
 # Your code goes here.
-export DESKTOP_FILE="$1"
-echo "NoDisplay=true" >> /usr/share/applications/${DESKTOP_FILE}
+DESKTOP_FILES=(
+  'nvim'
+  'syncthing-start'
+  'syncthing-ui'
+)
+
+for file in ${DESKTOP_FILES[@]}; do
+  echo "NoDisplay=true" >> /usr/share/applications/${file}.desktop
+done
