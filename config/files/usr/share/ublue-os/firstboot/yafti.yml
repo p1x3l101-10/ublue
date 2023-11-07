@@ -155,6 +155,7 @@ screens:
           default: false
           packages:
             - Helvum (Advanced controls for pipewire): org.pipewire.Helvum
+            - Gradience Nightly (Theming): com.github.GradienceTeam.Gradience.Devel
   final-screen:
     source: yafti.screen.title
     values:
