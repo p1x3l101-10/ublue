@@ -5,6 +5,7 @@ install:
   - steam-devices # Make steam controllers work
   - syncthing # Keep devices in sync
   - gnome-tweaks # Extra settings
+  - qt5ct # QT Themeing
   - tldr # Better man pages
 remove:
   - firefox # default firefox removed in favor of flatpak
