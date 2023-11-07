@@ -17,3 +17,6 @@ remove:
   - gnome-shell-extension-places-menu
   - gnome-shell-extension-window-list
   - gnome-classic-session # Fix dependency issues
+  - gnome-terminal # Flatpak
+  - nautilus # Flatpak
+  - gnome-terminal-nautilus # Fix dependency issues
