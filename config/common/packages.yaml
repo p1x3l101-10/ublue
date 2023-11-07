@@ -1,0 +1,18 @@
+type: rpm-ostree
+install:
+  - cmake # Compiler, dispite toolbox existing
+  - neovim # Better text editor dispite toolbox existing
+  - steam-devices # Make steam controllers work
+  - syncthing # Keep devices in sync
+  - gnome-tweaks # Extra settings
+  - tldr # Better man pages
+remove:
+  - firefox # default firefox removed in favor of flatpak
+  - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
+  - gnome-system-monitor # We have a flapak for that
+  # Remove built in extensions, except for background logo
+  - gnome-shell-extension-apps-menu
+  - gnome-shell-extension-launch-new-instance
+  - gnome-shell-extension-places-menu
+  - gnome-shell-extension-window-list
+  - gnome-classic-session # Fix dependency issues
