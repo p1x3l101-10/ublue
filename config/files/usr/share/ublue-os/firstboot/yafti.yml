@@ -31,6 +31,22 @@ screens:
         We have detected that you don't have Flathub's repository on your system. We will now add that repository to your system-wide list.
       actions:
         - run: flatpak remote-add --if-not-exists --system flathub https://flathub.org/repo/flathub.flatpakrepo
+  check-system-gnome-nightly:
+    source: yafti.screen.consent
+    values:
+      title: Missing GNOME Nightly Repository (System)
+      condition:
+        run: flatpak remotes --system --columns=name | grep gnome-nightly | wc -l | grep '^0$'
+      actions:
+        - run: flatpak remote-add --if-not-exists --system gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+  check-system-gradience:
+    source: yafti.screen.consent
+    values:
+      title: Missing Gradience Nightly Repository (System)
+      condition:
+        run: flatpak remotes --system --columns=name | grep gradience-nightly | wc -l | grep '^0$'
+      actions:
+        - run: flatpak remote-add --if-not-exists --system gradience-nightly https://gradienceteam.github.io/Gradience/index.flatpakrepo
   applications:
     source: yafti.screen.package
     values:
@@ -41,6 +57,12 @@ screens:
         user: false
         system: true
       groups:
+        Base Applications:
+          description: Basic applications that are VERY recommended to make your system work
+          default: true
+          packages:
+            - Nautilus (File Manager): org.gnome.NautilusDevel
+            - BlackBox (Terminal Emulator): com.raggesilver.BlackBox
         Core GNOME Apps:
           description: Core system applications for the GNOME desktop environment.
           default: true
