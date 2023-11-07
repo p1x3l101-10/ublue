@@ -9,3 +9,4 @@ modules:
   - from-file: common/hide-desktop-files.yaml
   - from-file: common/bling.yaml
   - from-file: common/yafti.yaml
+  - from-file: common/signing.yaml
