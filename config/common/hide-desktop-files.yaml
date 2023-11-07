@@ -1,3 +1,3 @@
 type: script
-  scripts:
-    - hide-desktop-files.sh # Hide specified desktop files
+scripts:
+  - hide-desktop-files.sh # Hide specified desktop files
