@@ -141,7 +141,6 @@ screens:
             - Slack: com.slack.Slack
             - Standard Notes: org.standardnotes.standardnotes
             - Thunderbird Email: org.mozilla.Thunderbird
-            - Helvum (Advanced controls for pipewire): org.pipewire.Helvum
         Streaming:
           description: Stream to the Internet.
           default: false
@@ -151,7 +150,11 @@ screens:
             - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
             - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
             - Boatswain for Streamdeck: com.feaneron.Boatswain
-
+        Misc:
+          description: Apps that dont fit in anywhere else
+          default: false
+          packages:
+            - Helvum (Advanced controls for pipewire): org.pipewire.Helvum
   final-screen:
     source: yafti.screen.title
     values:
