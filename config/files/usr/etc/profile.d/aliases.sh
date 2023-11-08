@@ -23,11 +23,11 @@ alias butane='podman run --rm --interactive --security-opt label=disable --volum
 alias flatpak-builder='flatpak run org.flatpak.Builder'
 alias rost='rpm-ostree'
 alias pak='flatpak'
+alias tbx='toolbox'
 pakex(){(
   cd $HOME/Sync/flatpak-backup
   ./pakman $@
 )}
-alias update='rost update;pak update -y'
 
 # Flatpak apps
 alias steam='flatpak run com.valvesoftware.Steam'
