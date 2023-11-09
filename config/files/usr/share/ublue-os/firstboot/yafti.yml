@@ -156,6 +156,7 @@ screens:
           packages:
             - Helvum (Advanced controls for pipewire): org.pipewire.Helvum
             - Gradience Nightly (Theming): com.github.GradienceTeam.Gradience.Devel
+            - Syncthing (File Sync Tool): me.kozec.syncthingtk
   final-screen:
     source: yafti.screen.title
     values:
