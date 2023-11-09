@@ -10,5 +10,5 @@ export PATH="$XDG_BIN_HOME:$PATH"
 
 # Set default programs
 export EDITOR='ex'
-export VISUAL='nvim'
+export VISUAL='vi'
 export PAGER='less'
