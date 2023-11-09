@@ -6,7 +6,6 @@ image-version: 38
 modules:
   - from-file: common/files.yaml
   - from-file: common/packages.yaml
-  - from-file: common/hide-desktop-files.yaml
   - from-file: common/bling.yaml
   - from-file: common/yafti.yaml
   - from-file: common/signing.yaml
