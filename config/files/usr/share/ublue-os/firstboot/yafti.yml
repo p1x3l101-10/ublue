@@ -37,12 +37,16 @@ screens:
       title: Missing GNOME Nightly Repository (System)
       condition:
         run: flatpak remotes --system --columns=name | grep gnome-nightly | wc -l | grep '^0$'
+      description: |
+        We have detected that you don't have GNOME's Nightly repository on your system. We will now add that repository to your system-wide list.
       actions:
         - run: flatpak remote-add --if-not-exists --system gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
   check-system-gradience:
     source: yafti.screen.consent
     values:
       title: Missing Gradience Nightly Repository (System)
+      description: |
+        We have detected that you don't have Gradience's Nightly repository on your system. We will now add that repository to your system-wide list.
       condition:
         run: flatpak remotes --system --columns=name | grep gradience-nightly | wc -l | grep '^0$'
       actions:
