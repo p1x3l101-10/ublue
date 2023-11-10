@@ -61,12 +61,6 @@ screens:
         user: false
         system: true
       groups:
-        Base Applications:
-          description: Basic applications that are VERY recommended to make your system work
-          default: true
-          packages:
-            - Nautilus (File Manager): org.gnome.NautilusDevel
-            - BlackBox (Terminal Emulator): com.raggesilver.BlackBox
         Core GNOME Apps:
           description: Core system applications for the GNOME desktop environment.
           default: true
@@ -101,12 +95,13 @@ screens:
           description: System applications for all desktop environments.
           default: true
           packages:
-            - Impression (Image Burner): io.gitlab.adhami3310.Impression
+            - BlackBox (Terminal Emulator): com.raggesilver.BlackBox
             - Dconf Editor: ca.desrt.dconf-editor
             - Deja Dup Backups: org.gnome.DejaDup
             - Fedora Media Writer: org.fedoraproject.MediaWriter
             - Flatseal (Permission Manager): com.github.tchx84.Flatseal
             - Font Downloader: org.gustavoperedo.FontDownloader
+            - Impression (Image Burner): io.gitlab.adhami3310.Impression
             - Mozilla Firefox: org.mozilla.firefox
             - Resources: net.nokyan.Resources
             - Warehouse (Data manager): io.github.flattool.Warehouse
