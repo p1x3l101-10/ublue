@@ -103,6 +103,7 @@ screens:
             - Font Downloader: org.gustavoperedo.FontDownloader
             - Impression (Image Burner): io.gitlab.adhami3310.Impression
             - Mozilla Firefox: org.mozilla.firefox
+            - Pika Backup: org.gnome.World.PikaBackup
             - Resources: net.nokyan.Resources
             - Warehouse (Data manager): io.github.flattool.Warehouse
         Web Browsers:
