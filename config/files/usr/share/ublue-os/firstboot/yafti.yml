@@ -89,7 +89,7 @@ screens:
           description: Alternate versions (better) of the core apps
           default: true
           packages:
-            - Celluloid: io.github.celluloid_player.Celluloid
+            - Celluloid (Alt. of Video Player): io.github.celluloid_player.Celluloid
             - Weather: io.github.amit9838.weather
         System Apps:
           description: System applications for all desktop environments.
