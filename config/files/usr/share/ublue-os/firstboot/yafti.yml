@@ -37,12 +37,16 @@ screens:
       title: Missing GNOME Nightly Repository (System)
       condition:
         run: flatpak remotes --system --columns=name | grep gnome-nightly | wc -l | grep '^0$'
+      description: |
+        We have detected that you don't have GNOME's Nightly repository on your system. We will now add that repository to your system-wide list.
       actions:
         - run: flatpak remote-add --if-not-exists --system gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
   check-system-gradience:
     source: yafti.screen.consent
     values:
       title: Missing Gradience Nightly Repository (System)
+      description: |
+        We have detected that you don't have Gradience's Nightly repository on your system. We will now add that repository to your system-wide list.
       condition:
         run: flatpak remotes --system --columns=name | grep gradience-nightly | wc -l | grep '^0$'
       actions:
@@ -57,12 +61,6 @@ screens:
         user: false
         system: true
       groups:
-        Base Applications:
-          description: Basic applications that are VERY recommended to make your system work
-          default: true
-          packages:
-            - Nautilus (File Manager): org.gnome.NautilusDevel
-            - BlackBox (Terminal Emulator): com.raggesilver.BlackBox
         Core GNOME Apps:
           description: Core system applications for the GNOME desktop environment.
           default: true
@@ -91,19 +89,21 @@ screens:
           description: Alternate versions (better) of the core apps
           default: true
           packages:
-            - Celluloid: io.github.celluloid_player.Celluloid
+            - Celluloid (Alt. of Video Player): io.github.celluloid_player.Celluloid
             - Weather: io.github.amit9838.weather
         System Apps:
           description: System applications for all desktop environments.
           default: true
           packages:
-            - Impression (Image Burner): io.gitlab.adhami3310.Impression
+            - BlackBox (Terminal Emulator): com.raggesilver.BlackBox
             - Dconf Editor: ca.desrt.dconf-editor
             - Deja Dup Backups: org.gnome.DejaDup
             - Fedora Media Writer: org.fedoraproject.MediaWriter
             - Flatseal (Permission Manager): com.github.tchx84.Flatseal
             - Font Downloader: org.gustavoperedo.FontDownloader
+            - Impression (Image Burner): io.gitlab.adhami3310.Impression
             - Mozilla Firefox: org.mozilla.firefox
+            - Pika Backup: org.gnome.World.PikaBackup
             - Resources: net.nokyan.Resources
             - Warehouse (Data manager): io.github.flattool.Warehouse
         Web Browsers:

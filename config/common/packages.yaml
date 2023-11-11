@@ -1,7 +1,6 @@
 type: rpm-ostree
 install:
   - steam-devices # Make steam controllers work
-  - gnome-tweaks # Extra settings
 remove:
   - firefox # default firefox removed in favor of flatpak
   - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -15,5 +14,4 @@ remove:
   - gnome-terminal # Flatpak
   - gnome-terminal-nautilus # Fix dependency issues
   - htop # Not used
-  - nautilus # Flatpak
   - nvtop # Not used
