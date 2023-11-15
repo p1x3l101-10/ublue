@@ -51,6 +51,16 @@ screens:
         run: flatpak remotes --system --columns=name | grep gradience-nightly | wc -l | grep '^0$'
       actions:
         - run: flatpak remote-add --if-not-exists --system gradience-nightly https://gradienceteam.github.io/Gradience/index.flatpakrepo
+  check-system-kdeapps:
+    source: yafti.screen.consent
+    values:
+      title: Missing KdeApps Nightly Repository (System)
+      description: |
+        We have detected that you don't have Kde's Nightly repository on your system. We will now add that repository to your system-wide list.
+        condition:
+        run: flatpak remotes --system --columns=name | grep kdeapps | wc -l | grep '^0$'
+      actions:
+        - run: flatpak remote-add --if-not-exists --system kdeapps https://distribute.kde.org/kdeapps.flatpakrepo
   applications:
     source: yafti.screen.package
     values:
