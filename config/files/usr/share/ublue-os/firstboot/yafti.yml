@@ -110,6 +110,8 @@ screens:
             - Deja Dup Backups: org.gnome.DejaDup
             - Fedora Media Writer: org.fedoraproject.MediaWriter
             - Flatseal (Permission Manager): com.github.tchx84.Flatseal
+            - Nautilus (File Manager): org.gnome.NautilusDevel
+            - Nautilus Previewer (File Previewer): org.gnome.NautilusPreviewerDevel
             - Font Downloader: org.gustavoperedo.FontDownloader
             - Impression (Image Burner): io.gitlab.adhami3310.Impression
             - Mozilla Firefox: org.mozilla.firefox

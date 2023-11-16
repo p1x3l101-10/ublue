@@ -13,5 +13,6 @@ remove:
   - gnome-classic-session # Fix dependency issues
   - gnome-terminal # Flatpak
   - gnome-terminal-nautilus # Fix dependency issues
+  - nautilus #flatpak
   - htop # Not used
   - nvtop # Not used
