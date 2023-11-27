@@ -14,6 +14,5 @@ remove:
   - gnome-terminal # Flatpak
   - gnome-terminal-nautilus # Fix dependency issues
   - gnome-tweaks # No unneeded apps
-  - nautilus #flatpak
   - htop # Not used
   - nvtop # Not used
