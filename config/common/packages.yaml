@@ -1,6 +1,7 @@
 type: rpm-ostree
 install:
   - steam-devices # Make steam controllers work
+  - langpacks-en
 remove:
   - firefox # default firefox removed in favor of flatpak
   - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
