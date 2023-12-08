@@ -8,6 +8,7 @@ install:
   - gnome-shell-extension-gsconnect
   - gnome-shell-extension-light-style
   - gnome-shell-extension-user-theme
+  - qt5ct # Support qt themes
 remove:
   - firefox # default firefox removed in favor of flatpak
   - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
