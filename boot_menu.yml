@@ -1,5 +1,5 @@
 ublue_variants:
-  - label: p1x3l101-10/ublue
+  - label: p1x3l101-10/silverblue-ublue
     ks: /kickstart/ublue-os.ks
     flavors:
       - label: ublue
