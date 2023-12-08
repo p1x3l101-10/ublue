@@ -2,6 +2,12 @@ type: rpm-ostree
 install:
   - steam-devices # Make steam controllers work
   - langpacks-en
+  - gnome-shell-extension-caffeine
+  - gnome-shell-extension-gamemode
+  - gamemode
+  - gnome-shell-extension-gsconnect
+  - gnome-shell-extension-light-style
+  - gnome-shell-extension-user-theme
 remove:
   - firefox # default firefox removed in favor of flatpak
   - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
