@@ -14,7 +14,6 @@ remove:
   - firefox # default firefox removed in favor of flatpak
   - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
   - gnome-system-monitor # We have a flapak for that
-  - gnome-extensions-app # We have a flatpak for that
   # Remove built in extensions, except for background logo
   - gnome-shell-extension-apps-menu
   - gnome-shell-extension-launch-new-instance
