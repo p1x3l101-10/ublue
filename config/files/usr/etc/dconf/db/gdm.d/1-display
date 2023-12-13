@@ -1,0 +1,5 @@
+[org/gnome/desktop/interface]
+clock-format='12h'
+
+[org/gnome/desktop/a11y]
+always-show-universal-access-status=false
