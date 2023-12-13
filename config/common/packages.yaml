@@ -10,6 +10,7 @@ install:
   - gnome-shell-extension-user-theme
   - gnome-shell-extension-blur-my-shell
   - qt5ct # Support qt themes
+  - systemd-container # allow changing of gdm settings
 remove:
   - firefox # default firefox removed in favor of flatpak
   - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
